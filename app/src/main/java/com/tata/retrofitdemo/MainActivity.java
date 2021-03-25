@@ -32,33 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_post).setOnClickListener(this);
         findViewById(R.id.btn_get).setOnClickListener(this);
 
-
-
-
-    }
-
-    private void testRetrofit() {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://v.juhe.cn/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        NewsService service = retrofit.create(NewsService.class);
-//        Call<Result<NewsResult>> call = servce.getNewsByGet("top", 10,30,"5b79baa8f9bc0169acf25329cdcf5001");
-//        call.enqueue(new Callback<Result<NewsResult>>() {
-//            @Override
-//            public void onResponse(Call<Result<NewsResult>> call, Response<Result<NewsResult>> response) {
-//                Log.d(TAG, "onResponse: "+response.toString());
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Result<NewsResult>> call, Throwable t) {
-//                Log.d(TAG, "onFailure: "+t.getMessage());
-//
-//            }
-//        });
-
-
-
     }
 
     @Override
